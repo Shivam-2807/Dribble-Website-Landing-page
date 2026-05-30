@@ -163,6 +163,10 @@ header {
     width: 100%;
     height: 90%;
 }
+.FirstT p {
+    display: grid;
+    align-items: center;
+}
 .Firstc {
     border-radius: 20px;
     grid-area: Firstc;
@@ -257,14 +261,7 @@ header {
     height: 120px;
 }
 
-@keyframes strip {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-25%);
-    }
-}
+
 .section-last {
     display: flex;
     justify-content: space-between;
@@ -322,4 +319,154 @@ Footer {
     height: auto;
     display:flex;
     width: auto;
+}
+/* =======animations========= */
+@keyframes strip {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-25%);
+    }
+}
+/* Smooth transitions */
+a, button, img, video, .box, .cards > div {
+    transition: all 0.35s ease;
+}
+
+/* Header links */
+.left-header h4 {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.left-header h4:hover {
+    color: #ff4fcf;
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.right-header button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right-header button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.login:hover {
+    background: #ff4fcf;
+    color: white;
+}
+
+/* Search Bar */
+.search {
+    transition: all 0.3s ease;
+}
+
+.search:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.searchicon {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.searchicon:hover {
+    transform: scale(1.15) rotate(15deg);
+}
+
+/* Trending Search Boxes */
+.box {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    background: #ff4fcf;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Navigation Buttons */
+.leftnav,
+.rightnav {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.leftnav:hover,
+.rightnav:hover {
+    background: black;
+    color: white;
+}
+
+/* Cards */
+.cards > div {
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.cards > div:hover {
+    transform: translateY(-10px);
+}
+
+/* Images */
+.FirstTimg,
+#STVideo,
+.cards img {
+    transition: transform 0.6s ease;
+}
+
+.FirstT:hover .FirstTimg,
+.ST:hover #STVideo,
+.cards > div:hover img {
+    transform: scale(1.08);
+}
+
+/* Card Text */
+.cards p {
+    transition: color 0.3s ease;
+}
+
+.cards > div:hover p {
+    color: #ff4fcf;
+}
+
+/* Logo Strip */
+.strip img {
+    transition: transform 0.3s ease;
+}
+
+.strip img:hover {
+    transform: scale(1.15);
+}
+
+/* Footer Links */
+.left-Footer p,
+.center-section1 p,
+.right-section1 i {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.left-Footer p:hover,
+.center-section1 p:hover {
+    color: #ff4fcf;
+}
+
+.right-section1 i:hover {
+    transform: translateY(-4px) scale(1.2);
+    color: #ff4fcf;
+}
+.cards > div:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.15),
+        0 0 25px rgba(255,79,207,0.25);
 }
