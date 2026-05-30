@@ -155,7 +155,6 @@ header {
 }
 .FirstT {
     border-radius: 20px;
-    background-color: antiquewhite;
     grid-area: FirstT;
     overflow: hidden;
 }
@@ -166,20 +165,16 @@ header {
 }
 .Firstc {
     border-radius: 20px;
-    background-color: rgb(42, 91, 58);
     grid-area: Firstc;
 }
 
 .Firstb {
     border-radius: 20px;
-    background-color: rgb(88, 119, 98);
     grid-area: Firstb;
 }
 
 .ST {
     overflow: hidden;
-    border-radius: 20px;
-    background-color: rgb(161, 176, 23);
     grid-area: ST;
 }
 #STVideo {
@@ -189,41 +184,84 @@ header {
 }
 .Sc {
     border-radius: 20px;
-    background-color: rgb(132, 186, 18);
     grid-area: Sc;
 }
 .Sb {
     border-radius: 20px;
-    background-color: rgb(131, 200, 27);
     grid-area: Sb;
 }
 .TT {
     border-radius: 20px;
-    background-color: rgb(29, 67, 157);
     grid-area: TT;
 }
 .Tc {
     border-radius: 20px;
-    background-color: rgb(29, 70, 157);
     grid-area: Tc;
 }
 .Tb {
     border-radius: 20px;
-    background-color: rgb(46, 29, 157);
     grid-area: Tb;
 }
 .FT {
     border-radius: 20px;
-    background-color: rgb(157, 29, 91);
     grid-area: FT;
 }
 .Fc {
     border-radius: 20px;
-    background-color: rgb(157, 29, 121);
     grid-area: Fc;
 }
 .Fb {
     border-radius: 20px;
-    background-color: rgb(157, 29, 38);
     grid-area: Fb;
+}
+.strip-wrapper {
+    overflow: hidden;
+    width:100%;
+}
+ .strip{
+    display:flex;
+    width:max-content;
+    animation:strip 8s linear infinite;
+    animation-delay: 1s;
+}
+.strip1 {
+    gap: 90px;
+    display: flex;
+}
+.strip2 {
+    gap: 90px;
+    display: flex;
+}
+.strip3 {
+    gap: 90px;
+    display: flex;
+}
+.strip4 {
+    gap: 90px;
+    display: flex;
+}
+.strip1 img {
+    width: 120px;
+    height: 120px;
+}
+.strip2 img {
+    width: 120px;
+    height: 120px;
+}
+.strip3 img {
+    width: 120px;
+    height: 120px;
+}
+.strip4 img {
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes strip {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-25%);
+    }
 }
